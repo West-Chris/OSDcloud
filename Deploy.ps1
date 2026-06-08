@@ -22,7 +22,9 @@ $VerbosePreference = 'Continue'
 
 # Start deployment — ZTI, no prompts
 Start-OSDCloud `
-    -OSName 'Windows 11 Enterprise' `
+    -OSName 'Windows 11 24H2 x64' `
+    -OSEdition 'Enterprise' `
+    -OSActivation 'Volume' `
     -OSLanguage 'en-gb' `
     -ZTI `
     -DriverPackHP
