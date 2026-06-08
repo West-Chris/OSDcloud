@@ -6,6 +6,9 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
+#Force Install Nuget
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force -ForceBootstrap -Confirm:$false
+
 # Install OSD module
 Install-Module OSD -Force -SkipPublisherCheck
 Import-Module OSD -Force
