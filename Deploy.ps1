@@ -31,4 +31,4 @@ New-Item -Path (Split-Path $setupComplete) -ItemType Directory -Force | Out-Null
 # "powershell -ExecutionPolicy Bypass -Command ""irm https://YOUR_URL/postinstall.ps1 | iex""" | Set-Content $setupComplete
 
 Stop-Transcript
-Restart-Computer -Force
+
