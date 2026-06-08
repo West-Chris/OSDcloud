@@ -26,8 +26,7 @@ Start-OSDCloud `
     -OSEdition 'Enterprise' `
     -OSActivation 'Volume' `
     -OSLanguage 'en-gb' `
-    -ZTI `
-    -DriverPackHP
+    -ZTI
 
 # Queue post-install hook (edit URL to point at your post-install script)
 $setupComplete = 'C:\Windows\Setup\Scripts\SetupComplete.cmd'
